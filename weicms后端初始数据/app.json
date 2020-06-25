@@ -1,0 +1,67 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/lists/lists",
+      "pages/form/form",
+      "pages/user/user",
+      "pages/technicain_detail/technicain_detail",
+      "pages/technicain/technicain",
+      "pages/book/book",
+      "pages/logs/logs",
+      "pages/detail/detail",
+      "pages/detail1/detail1"
+    ],
+    "permission": {
+  
+      "scope.userLocation": {
+      
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      
+      }
+      
+      },
+      "window": {
+      "backgroundTextStyle": "dark",
+      "navigationBarBackgroundColor": "#800080",
+      "navigationBarTitleText": "美甲商城",
+      "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+      "color": "#333",
+      "selectedColor": "#d24a58",
+      "borderStyle": "white",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "images/index_icon.png",
+          "selectedIconPath": "images/index_icon_HL.png"
+        },
+        {
+          "pagePath": "pages/lists/lists",
+          "text": "好物",
+          "iconPath": "images/2.jpg",
+          "selectedIconPath": "images/5.jpg"
+        },
+        {
+          "pagePath": "pages/technicain/technicain",
+          "text": "技师",
+          "iconPath": "images/skill_icon.png",
+          "selectedIconPath": "images/skill_icon_HL.png"
+        },
+        {
+          "pagePath": "pages/user/user",
+          "text": "我的",
+          "iconPath": "images/user_icon.png",
+          "selectedIconPath": "images/user_icon_HL.png"
+        },
+        {
+            "pagePath": "pages/form/form",
+            "text": "用户反馈",
+            "iconPath": "images/edit.png",
+            "selectedIconPath": "images/4.png"
+        }
+      ]
+    },
+    "sitemapLocation": "sitemap.json"
+  }

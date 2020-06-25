@@ -1,0 +1,1950 @@
+[ 2020-06-25T00:00:39+08:00 ] ::1 /weicms/index.php?s=/Admin/Update/delcache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Update/delcache%' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: meta_title F:\xampp\htdocs\weicms\Runtime\Cache\Admin\7448bc5b6c7ede42a8f022f98e8cc17b.php 第 5 行.
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_manager` [ RunTime:0.0024s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0023s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wp_public_follow` [ RunTime:0.0026s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_public_follow` WHERE ( uid='1' )  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\UserModel.class.php 第 251 行.
+NOTIC: [8] Undefined index:  F:\xampp\htdocs\weicms\Application\Common\Model\UserModel.class.php 第 271 行.
+NOTIC: [8] Undefined index:  F:\xampp\htdocs\weicms\Application\Common\Model\UserModel.class.php 第 272 行.
+NOTIC: [2] preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 3285 行.
+NOTIC: [8] Undefined variable: txt F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 3294 行.
+SQL: SHOW COLUMNS FROM `wp_user_tag_link` [ RunTime:0.0036s ]
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] file_put_contents(./Runtime/Temp/weicms_931b5b3cad55d64c859ac8fe37543b59.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0018s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_public_follow` WHERE ( uid='1' )  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\UserModel.class.php 第 251 行.
+NOTIC: [8] Undefined index:  F:\xampp\htdocs\weicms\Application\Common\Model\UserModel.class.php 第 271 行.
+NOTIC: [8] Undefined index:  F:\xampp\htdocs\weicms\Application\Common\Model\UserModel.class.php 第 272 行.
+NOTIC: [2] preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 3285 行.
+NOTIC: [8] Undefined variable: txt F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 3294 行.
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] file_put_contents(./Runtime/Temp/weicms_931b5b3cad55d64c859ac8fe37543b59.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2020-06-25T10:19:35+08:00 ] ::1 /weicms/index.php?s=/Admin/Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001831s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `wp_config` SET `value`='-275' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-275' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0017s ]
+
+[ 2020-06-25T10:19:35+08:00 ] ::1 /weicms/index.php?s=/Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000867s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-275' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = -275 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = -275  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001835s ]
+
+[ 2020-06-25T10:19:40+08:00 ] ::1 /weicms/index.php?s=/Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_name`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `login_name` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_action` WHERE `name` = 'admin_login' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_action_log` [ RunTime:0.0037s ]
+SQL: INSERT INTO `wp_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('12','1','0','user','1','1593051580','在2020-06-25 10:19登录了后台') [ RunTime:0.0006s ]
+SQL: UPDATE `wp_user` SET `login_count`=`login_count`+1,`last_login_time`='1593051580',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0002s ]
+
+[ 2020-06-25T10:19:40+08:00 ] ::1 /weicms/index.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000825s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wp_menu` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-06-25T10:19:40+08:00 ] ::1 /weicms/index.php?s=/Admin/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000822s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2020-06-25T10:19:41+08:00 ] ::1 /weicms/index.php?s=/Admin/update/getRemoteVersion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001931s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Update/getRemoteVersion%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001604s ]
+
+[ 2020-06-25T10:19:43+08:00 ] ::1 /weicms/index.php?s=/Admin/Config/group/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 3 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2020-06-25T10:19:43+08:00 ] ::1 /weicms/index.php?s=/Admin/update/getRemoteVersion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001191s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0005s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Update/getRemoteVersion%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002305s ]
+
+[ 2020-06-25T10:19:45+08:00 ] ::1 /weicms/index.php?s=/Admin/Notice/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [2] Declaration of Admin\Controller\NoticeController::lists() should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\xampp\htdocs\weicms\Application\Admin\Controller\NoticeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Notice/lists%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_system_notice` [ RunTime:0.0018s ]
+SQL: SELECT count(1) as count FROM `wp_system_notice` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: page F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Model.class.php 第 2219 行.
+SQL: SELECT * FROM `wp_system_notice` LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: meta_title F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 5 行.
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 132 行.
+NOTIC: [8] Undefined index: _page F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2020-06-25T10:19:45+08:00 ] ::1 /weicms/index.php?s=/Admin/Model/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_model` WHERE `status` > -1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type`,`addon` FROM `wp_model` WHERE `status` > -1 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Shop F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: UserCenter F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: UserCenter F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2020-06-25T10:19:54+08:00 ] ::1 /weicms/index.php?s=/Admin/think/lists/model/cms.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2] Declaration of Admin\Controller\ThinkController::lists($model = NULL, $p = 0) should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\xampp\htdocs\weicms\Application\Admin\Controller\ThinkController.class.php 第 16 行.
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Think/lists%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 102 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `wp_attribute` WHERE ( model_id=1155 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title`,`img`,`cTime`,`id` FROM `wp_cms` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_cms` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: add_url F:\xampp\htdocs\weicms\Runtime\Cache\Admin\ed98367a04bc7d6eeb61b0a105ec94a0.php 第 105 行.
+NOTIC: [8] Undefined variable: del_url F:\xampp\htdocs\weicms\Runtime\Cache\Admin\ed98367a04bc7d6eeb61b0a105ec94a0.php 第 106 行.
+NOTIC: [8] Undefined variable: search_url F:\xampp\htdocs\weicms\Runtime\Cache\Admin\ed98367a04bc7d6eeb61b0a105ec94a0.php 第 112 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 1071 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2020-06-25T10:20:10+08:00 ] ::1 /weicms/index.php?s=/Admin/Addons/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001300s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Addons/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 43  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 43 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '扩展' AND `pid` = 43 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist`,`type`,`cate_id`,`is_show` FROM `wp_addons` WHERE `name` IN ('Cms','Feedback','UserCenter') ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_addon_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `wp_addon_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cate_id F:\xampp\htdocs\weicms\Application\Admin\Controller\AddonsController.class.php 第 274 行.
+NOTIC: [8] Undefined index:  F:\xampp\htdocs\weicms\Application\Admin\Controller\AddonsController.class.php 第 274 行.
+NOTIC: [8] Undefined index:  F:\xampp\htdocs\weicms\Application\Admin\Controller\AddonsController.class.php 第 274 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: type F:\xampp\htdocs\weicms\Runtime\Cache\Admin\50122fa2bddc1c4a2751081bf5f0b5dc.php 第 104 行.
+NOTIC: [8] Undefined variable: 0 F:\xampp\htdocs\weicms\Runtime\Cache\Admin\50122fa2bddc1c4a2751081bf5f0b5dc.php 第 112 行.
+NOTIC: [8] Undefined variable: 0 F:\xampp\htdocs\weicms\Runtime\Cache\Admin\50122fa2bddc1c4a2751081bf5f0b5dc.php 第 113 行.
+NOTIC: [8] Undefined index: is_show_text F:\xampp\htdocs\weicms\Runtime\Cache\Admin\50122fa2bddc1c4a2751081bf5f0b5dc.php 第 145 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [2] include_once(./Addons/Feedback/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2736 行.
+NOTIC: [2] include_once(): Failed opening './Addons/Feedback/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2736 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2737 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\50122fa2bddc1c4a2751081bf5f0b5dc.php 第 156 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [2] include_once(./Addons/Cms/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2736 行.
+NOTIC: [2] include_once(): Failed opening './Addons/Cms/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2736 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2737 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\50122fa2bddc1c4a2751081bf5f0b5dc.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2020-06-25T10:20:14+08:00 ] ::1 /weicms/index.php?s=/Admin/Plugin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001503s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `title`,`name` FROM `wp_plugin` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Plugin/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 43  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 43 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '扩展' AND `pid` = 43 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist`,`cate_id`,`is_show` FROM `wp_plugin` WHERE `name` IN ('AliPlay','Attachment','BaiduStatistics','Cascade','DevTeam','DynamicCheckbox','DynamicSelect','Editor','EditorForAdmin','Material','News','Prize','ReturnTop','SiteStat','SocialComment','SystemInfo')  [ RunTime:0.0004s ]
+ERR: 插件AliPlay的入口文件不存在！
+ERR: 插件BaiduStatistics的入口文件不存在！
+ERR: 插件ReturnTop的入口文件不存在！
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: type F:\xampp\htdocs\weicms\Runtime\Cache\Admin\2762d8dc552b14555e16e158717a14ae.php 第 103 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `wp_plugin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `wp_plugin` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: SocialComment F:\xampp\htdocs\weicms\Application\Home\Model\AddonsModel.class.php 第 70 行.
+NOTIC: [2] include_once(./Addons/SocialComment/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2736 行.
+NOTIC: [2] include_once(): Failed opening './Addons/SocialComment/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2736 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2737 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\2762d8dc552b14555e16e158717a14ae.php 第 129 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [2] include_once(./Plugins/Cascade/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] include_once(): Failed opening './Plugins/Cascade/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2766 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\2762d8dc552b14555e16e158717a14ae.php 第 129 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [2] include_once(./Plugins/DynamicSelect/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] include_once(): Failed opening './Plugins/DynamicSelect/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2766 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\2762d8dc552b14555e16e158717a14ae.php 第 129 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [2] include_once(./Plugins/News/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] include_once(): Failed opening './Plugins/News/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2766 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\2762d8dc552b14555e16e158717a14ae.php 第 129 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [2] include_once(./Plugins/DynamicCheckbox/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] include_once(): Failed opening './Plugins/DynamicCheckbox/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2766 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\2762d8dc552b14555e16e158717a14ae.php 第 129 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [2] include_once(./Plugins/Prize/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] include_once(): Failed opening './Plugins/Prize/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2766 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\2762d8dc552b14555e16e158717a14ae.php 第 129 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [2] include_once(./Plugins/Material/config.php): failed to open stream: No such file or directory F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] include_once(): Failed opening './Plugins/Material/config.php' for inclusion (include_path='F:\xampp\php\PEAR') F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2765 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 2766 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable F:\xampp\htdocs\weicms\Runtime\Cache\Admin\2762d8dc552b14555e16e158717a14ae.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002528s ]
+
+[ 2020-06-25T10:20:15+08:00 ] ::1 /weicms/index.php?s=/Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001409s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 16 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_name`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title` FROM `wp_auth_group`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wp_auth_group_access` WHERE `uid` IN ('1')  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 4 F:\xampp\htdocs\weicms\Application\Admin\Controller\UserController.class.php 第 70 行.
+NOTIC: [2] preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 3285 行.
+NOTIC: [8] Undefined variable: txt F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 3294 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title` FROM `wp_auth_group` WHERE ( status>0 and manager_id=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: 0 F:\xampp\htdocs\weicms\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 115 行.
+NOTIC: [8] Undefined index: admin_public_count F:\xampp\htdocs\weicms\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 154 行.
+NOTIC: [8] Undefined index: public_count F:\xampp\htdocs\weicms\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 155 行.
+NOTIC: [8] Undefined index: audit_time F:\xampp\htdocs\weicms\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 162 行.
+NOTIC: [2] Use of undefined constant is_admin - assumed 'is_admin' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2020-06-25T10:20:16+08:00 ] ::1 /weicms/index.php?s=/Admin/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2020-06-25T10:20:16+08:00 ] ::1 /weicms/index.php?s=/Admin/update/getRemoteVersion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Update/getRemoteVersion%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002312s ]
+
+[ 2020-06-25T10:20:17+08:00 ] ::1 /weicms/index.php?s=/Admin/Config/group/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 3 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2020-06-25T10:20:17+08:00 ] ::1 /weicms/index.php?s=/Admin/update/getRemoteVersion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001528s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Update/getRemoteVersion%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001628s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004727s ]
+
+[ 2020-06-25T10:20:18+08:00 ] ::1 /weicms/index.php?s=/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001332s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Config/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_config` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `wp_config` WHERE `status` = 1 ORDER BY sort,id LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001506s ]
+
+[ 2020-06-25T10:20:19+08:00 ] ::1 /weicms/index.php?s=/Admin/Notice/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [2] Declaration of Admin\Controller\NoticeController::lists() should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\xampp\htdocs\weicms\Application\Admin\Controller\NoticeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Notice/lists%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT count(1) as count FROM `wp_system_notice` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: page F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Model.class.php 第 2219 行.
+SQL: SELECT * FROM `wp_system_notice` LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: meta_title F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 5 行.
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 132 行.
+NOTIC: [8] Undefined index: _page F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2020-06-25T10:20:21+08:00 ] ::1 /weicms/index.php?s=/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Config/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_config` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `wp_config` WHERE `status` = 1 ORDER BY sort,id LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001524s ]
+
+[ 2020-06-25T10:20:22+08:00 ] ::1 /weicms/index.php?s=/Admin/Notice/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [2] Declaration of Admin\Controller\NoticeController::lists() should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) F:\xampp\htdocs\weicms\Application\Admin\Controller\NoticeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Notice/lists%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT count(1) as count FROM `wp_system_notice` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: page F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Model.class.php 第 2219 行.
+SQL: SELECT * FROM `wp_system_notice` LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: meta_title F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 5 行.
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 132 行.
+NOTIC: [8] Undefined index: _page F:\xampp\htdocs\weicms\Runtime\Cache\Admin\0ac69445a46e6d878528e00fdbab561f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001497s ]
+
+[ 2020-06-25T10:20:25+08:00 ] ::1 /weicms/index.php?s=/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001374s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Config/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_config` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `wp_config` WHERE `status` = 1 ORDER BY sort,id LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+NOTIC: [8] Undefined offset: 5 F:\xampp\htdocs\weicms\Application\Admin\Common\function.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2020-06-25T10:20:25+08:00 ] ::1 /weicms/index.php?s=/Admin/Model/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001297s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_model` WHERE `status` > -1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type`,`addon` FROM `wp_model` WHERE `status` > -1 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Shop F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: UserCenter F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: UserCenter F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote F:\xampp\htdocs\weicms\Application\Admin\Controller\ModelController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2020-06-25T10:20:42+08:00 ] ::1 /weicms/index.php?s=/Admin/model/edit/id/1155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001488s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/edit%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type`,`addon` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`is_show` FROM `wp_attribute` WHERE `model_id` = 1155 ORDER BY id asc  [ RunTime:0.0002s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2020-06-25T10:21:30+08:00 ] ::1 /weicms/index.php?s=/Admin/attribute/index/model_id/1155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001203s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_attribute` WHERE `model_id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `model_id` = 1155 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2020-06-25T10:21:37+08:00 ] ::1 /weicms/index.php?s=/Admin/model/edit/id/1155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001520s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/edit%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type`,`addon` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] unlink(./Runtime/Temp/weicms_7af532d8e5b559f27805887d8520c702.php): No such file or directory F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT `id`,`name`,`title`,`is_show` FROM `wp_attribute` WHERE `model_id` = 1155 ORDER BY id asc  [ RunTime:0.0002s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001203s ]
+
+[ 2020-06-25T10:22:24+08:00 ] ::1 /weicms/index.php?s=/Admin/Model/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001324s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/update%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'cms' AND `id` <> '1155' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wp_model` SET `name`='cms',`title`='CMS内容',`addon`='Cms',`field_sort`='[\"title\",\"content\",\"img\"]',`list_grid`='content:正文内容
+title:文章标题
+img|get_img_html:封面图
+cTime|time_format:发布时间
+id:操作:[EDIT]|编辑,[DELETE]|删除',`search_key`='title:请输入标题进行搜索',`search_list`='',`template_list`='',`template_add`='',`template_edit`='',`list_row`='10',`update_time`='1593051744' WHERE `id` = 1155 [ RunTime:0.0003s ]
+NOTIC: [2] unlink(./Runtime/Temp/weicms_8badceef8761e1f2fa41d8bf7e2cdf39.php): No such file or directory F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `wp_action` WHERE `name` = 'update_model' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `wp_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('7','1','0','model','1155','1593051744','操作url：/weicms/index.php?s=/Admin/Model/update.html') [ RunTime:0.0002s ]
+
+[ 2020-06-25T10:22:25+08:00 ] ::1 /weicms/index.php?s=/Admin/attribute/index/model_id/1155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000988s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_attribute` WHERE `model_id` = 1155 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `model_id` = 1155 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2020-06-25T10:23:23+08:00 ] ::1 /weicms/index.php?s=/Admin/model/edit/id/1155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001524s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/edit%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type`,`addon` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`is_show` FROM `wp_attribute` WHERE `model_id` = 1155 ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [2] Use of undefined constant addon - assumed 'addon' (this will throw an Error in a future version of PHP) F:\xampp\htdocs\weicms\Runtime\Cache\Admin\4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+
+[ 2020-06-25T10:23:30+08:00 ] ::1 /weicms/index.php?s=/Admin/Model/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/update%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'cms' AND `id` <> '1155' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wp_model` SET `name`='cms',`title`='CMS内容',`addon`='Cms',`field_sort`='[\"title\",\"content\",\"img\"]',`list_grid`='title:文章标题
+img|get_img_html:封面图
+cTime|time_format:发布时间
+id:操作:[EDIT]|编辑,[DELETE]|删除',`search_key`='title:请输入标题进行搜索',`search_list`='',`template_list`='',`template_add`='',`template_edit`='',`list_row`='10',`update_time`='1593051810' WHERE `id` = 1155 [ RunTime:0.0003s ]
+NOTIC: [2] unlink(./Runtime/Temp/weicms_8badceef8761e1f2fa41d8bf7e2cdf39.php): No such file or directory F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `wp_action` WHERE `name` = 'update_model' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `wp_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('7','1','0','model','1155','1593051810','操作url：/weicms/index.php?s=/Admin/Model/update.html') [ RunTime:0.0002s ]
+
+[ 2020-06-25T10:23:32+08:00 ] ::1 /weicms/index.php?s=/Admin/attribute/index/model_id/1155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000818s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_attribute` WHERE `model_id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `model_id` = 1155 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001847s ]
+
+[ 2020-06-25T10:23:41+08:00 ] ::1 /weicms/index.php?s=/Admin/Attribute/edit/id/11371.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001513s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/edit%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `id` = 11371 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`name` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2020-06-25T10:23:46+08:00 ] ::1 /weicms/index.php?s=/Admin/Attribute/index/model_id/1155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined index: uid F:\xampp\htdocs\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\xampp\htdocs\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\xampp\htdocs\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\xampp\htdocs\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_attribute` WHERE `model_id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `model_id` = 1155 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1155 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
+

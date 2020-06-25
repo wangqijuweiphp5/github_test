@@ -1,0 +1,34 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="ar_coverpath">
+
+    <image src="http://qb4rdjp8h.bkt.clouddn.com/睫毛1.jpg"></image>
+  
+  </view>
+
+  <view class="ar_cont">
+  <view>
+      <text class="ar_cont_h1">睫毛稀疏 种睫毛来帮忙</text>
+      <text class="ar_cont_price">价格：￥198</text>
+      <text class="cont">
+
+      </text>
+
+      <view class="ar_line"></view>
+      <text class="ar_cont_h1">详情描述</text>
+      <text class="cont">
+      美甲班爱尚美集团全国连锁,统一课程和学费,全国8个主要城市开设分校,1万家就业合作单位,每年向社会输送2万名美业人才.中短期精英培训美甲班爱尚美集团全国连锁,统一课程和学费,全国8个主要城市开设分校,1万家就业合作单位,每年向社会输送2万名美业人才.中短期精英培
+      
+      </text>
+
+      <button class="ar_book" bindtap="bookTap">立即购买</button>
+
+  </view>
+  
+  </view>
+
+
+
+
+
+</view>
